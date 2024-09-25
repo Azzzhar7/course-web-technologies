@@ -33,21 +33,6 @@ By following this repository, you will:
 - Bootstrap: For responsive design without writing additional CSS.
 - JavaScript: For adding interactivity to the page.
 
-## **Folder Structure**
-repository-name/
-│
-├── 01-HTML/
-│   └── index.html  # Basic HTML portfolio page with detailed comments.
-│
-├── 02-HTML-CSS/
-│   └── index.html  # HTML with CSS styling applied.
-│
-├── 03-HTML-Bootstrap/
-│   └── index.html  # HTML with Bootstrap for responsive design.
-│
-└── 04-JavaScript/
-    └── index.html  # HTML with Bootstrap and JavaScript functionalities.
-
 ## **Section Details**
 **01-HTML**
 - Basic HTML tags and elements.
@@ -59,7 +44,7 @@ repository-name/
 **03-HTML-Bootstrap**
 - Utilize Bootstrap components for a responsive layout.
 - Learn about the Bootstrap grid system, navigation bar, buttons, cards, and modals.
-**04-JavaScript**
+**04-JavaScript Snippets**
 - Add interactive features like form validation, smooth scrolling, image modals, and more.
 - Learn how JavaScript can enhance user experience without altering the page structure.
 
