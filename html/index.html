@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata: Provides information about the HTML document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <!-- Header Section: Contains the top section of the page -->
+    <header>
+        <!-- Navigation Bar: Contains links to different sections of the page -->
+        <nav>
+            <h1>My Portfolio</h1> <!-- Main Title of the Page -->
+            <ul> <!-- Unordered list used for navigation links -->
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section: A large introductory image or text -->
+    <section id="banner">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Your one-stop destination to know more about me and my work.</p>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div id="main-content">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with experience in creating dynamic and user-friendly websites.</p>
+        </section>
+
+        <!-- Skills Section: Example of using different types of lists -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <!-- Unordered list -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            
+            <h3>Soft Skills</h3>
+            <!-- Ordered list -->
+            <ol>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+            </ol>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <!-- Table to display project details -->
+            <table border="1">
+                <thead> <!-- Table header -->
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technologies</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Table body -->
+                    <tr>
+                        <td>Project One</td>
+                        <td>A simple website</td>
+                        <td>HTML, CSS</td>
+                        <td><a href="#">View Project</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project Two</td>
+                        <td>Interactive web app</td>
+                        <td>HTML, CSS, JavaScript</td>
+                        <td><a href="#">View Project</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section: Example of using a form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <!-- Label and input for name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <!-- Label and input for email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <!-- Textarea for message -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <!-- Submit button -->
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Sidebar: Can contain additional links or information -->
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer Section: Contains the bottom part of the page -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Multi-lines comment
+        A comprehensive example of a static portfolio page using only HTML. 
+        This code includes comments explaining the various HTML tags, attributes, values, and elements 
+        such as forms, tables, header, footer, sidebar, navigation, links, images, div, span, banner, 
+        input controls, and lists.
+
+        Key HTML Concepts Covered:
+        Basic Structure: <!DOCTYPE html>, <html>, <head>, and <body>.
+        Metadata: <meta> tags for character set and viewport.
+        Text Formatting: Using <h1>, <h2>, <h3>, <p> for headings and paragraphs.
+        Links: <a> with href attribute for internal page navigation and external links.
+        Lists: <ul> for unordered and <ol> for ordered lists.
+        Images: Image tags can be added using <img src="path_to_image" alt="description">.
+        Tables: <table>, <thead>, <tbody>, <tr>, <th>, and <td>.
+        Form Elements: <form>, <label>, <input>, <textarea> for capturing user input.
+        Sections: <header>, <footer>, <section>, <aside> to organize content.
+        Block vs Inline Elements: Example of block-level elements (<div>) and inline elements (<span>).
+    -->
+
+</body>
+</html>

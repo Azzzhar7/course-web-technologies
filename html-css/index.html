@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata: Provides information about the HTML document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- CSS Styles -->
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Container and Section Styling */
+        #main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        /* Header and Navigation Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner Styling */
+        #banner {
+            background-color: #e0f7fa;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        /* Sidebar Styling */
+        aside {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        aside ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 5px 0;
+        }
+
+        aside ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 5px 0 3px;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #main-content {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px 0;
+            }
+
+            #banner {
+                padding: 15px;
+            }
+
+            aside {
+                display: none; /* Hide sidebar on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section: Contains the top section of the page -->
+    <header>
+        <!-- Navigation Bar: Contains links to different sections of the page -->
+        <nav>
+            <h1>My Portfolio</h1> <!-- Main Title of the Page -->
+            <ul> <!-- Unordered list used for navigation links -->
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section: A large introductory image or text -->
+    <section id="banner">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Your one-stop destination to know more about me and my work.</p>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div id="main-content">
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a passionate web developer with experience in creating dynamic and user-friendly websites.</p>
+        </section>
+
+        <!-- Skills Section: Example of using different types of lists -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            <!-- Unordered list -->
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            
+            <h3>Soft Skills</h3>
+            <!-- Ordered list -->
+            <ol>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Problem-solving</li>
+            </ol>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <!-- Table to display project details -->
+            <table border="1">
+                <thead> <!-- Table header -->
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Technologies</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Table body -->
+                    <tr>
+                        <td>Project One</td>
+                        <td>A simple website</td>
+                        <td>HTML, CSS</td>
+                        <td><a href="#">View Project</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project Two</td>
+                        <td>Interactive web app</td>
+                        <td>HTML, CSS, JavaScript</td>
+                        <td><a href="#">View Project</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Section: Example of using a form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <!-- Label and input for name -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <!-- Label and input for email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <!-- Textarea for message -->
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <!-- Submit button -->
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Sidebar: Can contain additional links or information -->
+    <aside>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer Section: Contains the bottom part of the page -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!--
+        A comprehensive example of CSS styling applied to a static portfolio page.
+        This CSS code includes styles for various HTML elements, demonstrating how to enhance
+        appearance, layout, and responsiveness. It covers fundamental concepts such as colors, margins,
+        paddings, flexbox, media queries, and box models.
+
+        Key CSS Concepts Covered:
+        Global Styling: Applying consistent styles across all elements using the universal selector (*) 
+        and targeting common tags like body, div, p, etc.
+        
+        Box Model: Demonstrating the use of margins, padding, borders, and width to control element spacing 
+        and dimensions.
+        
+        Layout Techniques:
+        - Flexbox: Used for layout management in #main-content and nav ul to create flexible and 
+        responsive designs.
+        - Display Property: Example of display values like block, flex, none, etc., for various HTML elements.
+        
+        Typography: 
+        - Font properties: font-family, font-size, and font-weight to control text styling.
+        - Text alignment and decoration: Using text-align, color, and text-decoration.
+
+        Colors and Backgrounds: 
+        - Background-color, color, and background properties to define element colors and backgrounds.
+
+        Borders and Box Shadows: 
+        - Usage of border, border-radius, and box-shadow to create visually appealing effects.
+        
+        Styling Links and Buttons: 
+        - Pseudo-classes (e.g., :hover) for interactive link/button states.
+        
+        Responsive Design: 
+        - Media Queries (@media) to adjust the layout and styles based on different screen sizes.
+        
+        Lists and Tables: 
+        - Removing default list styles (list-style-type) and adding padding/margins for better appearance.
+        - Table styling for borders, padding, and background colors.
+
+        Best Practices:
+        - Consistent use of whitespace, indentation, and comments for code readability.
+        - Grouping related styles and using CSS specificity to target elements effectively.
+    -->
+
+
+</body>
+</html>

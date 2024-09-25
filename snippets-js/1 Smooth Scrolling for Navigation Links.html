@@ -1,0 +1,17 @@
+<script>
+// 1. Smooth Scrolling
+/*
+Smooth Scrolling for Navigation Links
+Add smooth scrolling to your navigation links so that clicking on them 
+smoothly scrolls the page to the corresponding section instead of jumping directly.
+*/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
