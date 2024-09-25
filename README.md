@@ -37,13 +37,16 @@ By following this repository, you will:
 **01-HTML**
 - Basic HTML tags and elements.
 - Understand the structure of a web page, including headings, paragraphs, images, links, lists, tables, forms, and more.
+
 **02-HTML-CSS**
 - Learn how to apply CSS properties to style HTML elements.
 - Understand the difference between inline, internal, and external CSS.
 - Experiment with colors, fonts, margins, padding, and positioning.
+
 **03-HTML-Bootstrap**
 - Utilize Bootstrap components for a responsive layout.
 - Learn about the Bootstrap grid system, navigation bar, buttons, cards, and modals.
+
 **04-JavaScript Snippets**
 - Add interactive features like form validation, smooth scrolling, image modals, and more.
 - Learn how JavaScript can enhance user experience without altering the page structure.
