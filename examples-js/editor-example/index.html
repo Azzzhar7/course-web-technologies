@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            p {
+                padding: 10px;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                min-height: 300px;
+                margin: 5px 0;
+            }
+            select, input {
+                padding: 5px;
+                height: 35px;
+                width: 60px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body onload="changeStyle();">
+        Font Size
+        <select onchange="changeStyle()" id="changeSize">
+            <option value="12px">12</option>
+            <option value="14px">14</option>
+            <option value="20px">20</option>
+            <option value="30px" selected>30</option>
+        </select>
+        Color
+        <input type="color" id="changeColor" onchange="changeStyle()" value="#dddddd">
+        <p id="content" contenteditable="true">Text here...</p>
+        <script>
+            // changeStyle();
+            function changeStyle() {
+                // alert("function called");
+                var elem = document.getElementById("content");
+                var fs = document.getElementById("changeSize").value;
+                var clr = document.getElementById("changeColor").value;
+                // alert(fs);
+                elem.style.fontFamily = "Times New Roman";
+                elem.style.fontSize = fs;
+                elem.style.color = clr;
+            }
+        </script>
+    </body>
+</html>

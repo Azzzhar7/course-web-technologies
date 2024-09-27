@@ -205,6 +205,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#copyrights">Copyrights</a></li>
             </ul>
         </nav>
     </header>
@@ -311,7 +312,7 @@
     </aside>
 
     <!-- Footer Section: Contains the bottom part of the page -->
-    <footer>
+    <footer id="copyrights">
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
     </footer>
 
@@ -358,6 +359,23 @@
         - Grouping related styles and using CSS specificity to target elements effectively.
     -->
 
+    <script>
+        // 1. Smooth Scrolling
+        /*
+        Smooth Scrolling for Navigation Links
+        Add smooth scrolling to your navigation links so that clicking on them 
+        smoothly scrolls the page to the corresponding section instead of jumping directly.
+        */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+    </script>
 
 </body>
 </html>

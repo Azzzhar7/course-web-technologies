@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <style>
+            input, button {
+                display: block;
+                margin: 10px 0;
+                padding: 5px;
+                width: 100%;
+            }
+            .newFields input, .newFields button {
+                display: inline;
+                margin: 10px 0;
+                padding: 5px;
+            }
+            .newFields input {
+                width: 90%;
+            }
+            .newFields button {
+                width: 10%;
+            }
+            #outputBox {
+                border: 1px solid #ddd;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: aliceblue;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <input type="text" placeholder="Default Value">
+            <div id="moreFields"></div>
+            <button onclick="addMoreFields()" type="button">Add More</button>
+            <button type="button" onclick="printData()">Print Data</button>
+            <code id="outputBox"></code>
+        </form>
+
+        <script>
+            var counter = 0;
+            function addMoreFields() {
+                if (counter >= 3) {
+                    alert("Limit exceed!");
+                    return false;
+                }
+                var parent = document.getElementById("moreFields");
+                
+                var child = document.createElement("div");
+                child.className = "newFields";
+                
+                var newField = document.createElement("input");
+                newField.type = "text";
+                newField.name = "newFields[]";
+                newField.className = "fileds";
+                newField.value = "Test-"+counter;
+                newField.placeholder = "Additional Value";
+
+                var deleteButton = document.createElement("button");
+                deleteButton.innerText = "X"
+			    deleteButton.type = "button";
+                deleteButton.onclick = function() {
+                    deleteButton.parentElement.remove();
+                    counter--;
+                }
+
+                child.appendChild(newField);
+                child.appendChild(deleteButton);
+                parent.appendChild(child);
+                counter++;
+                
+            }
+            function printData() {
+                
+                var fields = document.getElementsByClassName("fileds");
+                // console.log(fields);
+                for(var index = 0; index < fields.length; index++) {
+                    // console.log(fields[index].value);
+                    document.getElementById("outputBox").innerHTML+= fields[index].value + "<br>";
+                }
+            }
+
+            // deleteButton.addEventListener('click', function(event) {
+            //     event.target.parentElement.remove();
+            //     counter--;
+            // });
+
+
+
+        </script>
+    </body>
+</html>
