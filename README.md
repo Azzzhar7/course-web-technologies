@@ -59,5 +59,5 @@ By following this repository, you will:
 Each index.html file contains comments explaining the purpose of tags, properties, and methods used.
 
 ## **Contact**
-- *Email: [muhammadazhar@uaar.edu.pk](muhammadazhar@uaar.edu.pk)*
+- *Email: [muhammadazhar@uaar.edu.pk](mailto:muhammadazhar@uaar.edu.pk)*
 - *Linkedin: [https://www.linkedin.com/in/azzzhar7/](https://www.linkedin.com/in/azzzhar7/)*
