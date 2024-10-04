@@ -1,0 +1,31 @@
+<!-- 3. Image Modal/Lightbox
+Allow users to click on project images (if included) to view them in a modal or lightbox. 
+This improves the user experience for viewing larger versions of images without disrupting the layout. -->
+
+<!-- Add Modal structure at the end of the body -->
+
+<!-- HTML for Modal: -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" id="modalImage" class="img-fluid" alt="Project Image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- JavaScript Code: -->
+<script>
+    // Image modal functionality
+    document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('click', function() {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = this.src;
+            $('#imageModal').modal('show'); // Show Bootstrap modal
+        });
+    });
+</script>

@@ -1,0 +1,26 @@
+<!-- 4. Dynamic Skill Progress Bars
+Use JavaScript to dynamically animate skill progress bars when the "Skills" section comes into view. 
+This will make your technical skills look more interactive.
+-->
+
+<!-- HTML for Progress Bars:  -->
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">HTML</div>
+</div>
+
+<!-- JavaScript Code: -->
+<script>
+    // Skill progress bar animation
+    window.addEventListener('scroll', function() {
+        const skillsSection = document.getElementById('skills');
+        const progressBars = document.querySelectorAll('.progress-bar');
+        
+        if (window.scrollY + window.innerHeight > skillsSection.offsetTop) {
+            progressBars.forEach((bar, index) => {
+                const skillLevel = [90, 80, 70, 85]; // Example skill percentages
+                bar.style.width = skillLevel[index] + '%';
+                bar.setAttribute('aria-valuenow', skillLevel[index]);
+            });
+        }
+    });
+</script>

@@ -1,10 +1,10 @@
-<script>
+ <!-- 2. Form Validation
 
-// Form Validation
-/*
 Implement custom form validation to provide feedback when users 
-try to submit the contact form with invalid or missing data.
-*/
+try to submit the contact form with invalid or missing data. -->
+
+<!-- JavaScript Code:  -->
+<script>
 document.querySelector('form').addEventListener('submit', function (e) {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -17,5 +17,4 @@ document.querySelector('form').addEventListener('submit', function (e) {
         alert('Thank you for your message!');
     }
 });
-
 </script>

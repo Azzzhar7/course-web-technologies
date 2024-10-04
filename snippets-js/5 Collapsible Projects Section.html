@@ -1,0 +1,17 @@
+<!-- 5. Collapsible Projects Section
+Make the projects section collapsible by using JavaScript to hide/show content on demand. 
+This improves usability on mobile devices while keeping the content accessible.
+-->
+
+<!-- JavaScript Code:  -->
+<script>
+    // Collapsible functionality for Projects
+    document.getElementById('projects').addEventListener('click', function() {
+        const projectTable = document.querySelector('#projects table');
+        if (projectTable.style.display === 'none') {
+            projectTable.style.display = 'table';
+        } else {
+            projectTable.style.display = 'none';
+        }
+    });
+</script>

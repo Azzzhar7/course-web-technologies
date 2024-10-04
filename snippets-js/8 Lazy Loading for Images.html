@@ -1,0 +1,30 @@
+<!-- 8. Lazy Loading for Images
+For pages with multiple images, implement lazy loading using JavaScript to 
+improve performance and reduce initial load times. 
+This ensures images are only loaded when they are in the viewport. 
+-->
+
+<!-- HTML for Lazy Loading Images: -->
+<img data-src="path_to_image.jpg" class="lazy img-fluid" alt="Project Image">
+
+<!-- JavaScript Code: -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const lazyImages = document.querySelectorAll('img');
+
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.src = img.getAttribute('data-src');
+                    img.classList.remove('lazy');
+                    observer.unobserve(img);
+                }
+            });
+        });
+
+        lazyImages.forEach(img => {
+            imageObserver.observe(img);
+        });
+    });
+</script>

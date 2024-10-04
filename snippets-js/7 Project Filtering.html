@@ -1,0 +1,27 @@
+<!-- 7. Project Filtering
+If you have multiple projects in your portfolio, you can add a filter using JavaScript that allows users to filter the projects based on categories.
+-->
+
+<!-- HTML for Filter Buttons: -->
+<div id="project-filters" class="text-center mb-3">
+    <button class="btn btn-secondary filter-btn" data-category="all">All</button>
+    <button class="btn btn-secondary filter-btn" data-category="web">Web Development</button>
+    <button class="btn btn-secondary filter-btn" data-category="app">App Development</button>
+</div>
+
+<!-- JavaScript Code: -->
+<script>
+    // Filter functionality for projects
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            document.querySelectorAll('table tbody tr').forEach(row => {
+                if (category === 'all' || row.getAttribute('data-category') === category) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
